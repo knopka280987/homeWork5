@@ -3,41 +3,64 @@ public class Main {
         System.out.println("Hello world!");
 
         //task 1
-        int []weight = new int[3];
-        weight[0] = 1;
-        weight[1] = 2;
-        weight[2] = 3;
-        double []abc = {1.57, 7.654, 9.986};
-        char []def = {53, 52, 51};
+        int[] array1 = new int[3];
+        array1[0] = 1;
+        array1[1] = 2;
+        array1[2] = 3;
+        double[] array2 = {1.57, 7.654, 9.986};
+        char[] array3 = {53, 52, 51};
 
 
         //task 2
-        for (int i = 0; i < weight.length; i ++) {
-            if (i == weight.length - 1)
-                System.out.println(weight[i]);
-            else System.out.print(weight[i] + ".");
+        for (int i = 0; i < array1.length; i++) {
+            System.out.println(array1[i]);
+            if (i != array1.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
-
-        for (int d = 0; d < abc.length; d ++) {
-            if (d == abc.length - 1)
-                System.out.println(abc[d]);
-            else System.out.print(abc[d] + ".");
+        for (int i = 0; i < array2.length; i++) {
+            System.out.println(array2[i]);
+            if (i != array2.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
+        for (int i = 0; i < array3.length; i++) {
+            System.out.println(array3[i]);
+            if (i != array3.length - 1) {
+                System.out.print(", ");
 
-        for (int e = def.length - 1; e >= 0; e--) {
-            System.out.println(def[e] + "."); }
-        System.out.println();
+            }
         }
-
-
         //task3
-
-
-
+        for (int i = array1.length - 1; i >= 0; i--) {
+            System.out.print(array1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
+        System.out.println();
+        for (int i = array2.length - 1; i >= 0; i--) {
+            System.out.print(array2[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = array3.length - 1; i >= 0; i--) {
+            System.out.print(array3[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        System.out.println();
+    }
 
+        //task4
+
+    }
 
 
 
